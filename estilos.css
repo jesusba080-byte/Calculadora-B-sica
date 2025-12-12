@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(300deg, rgb(39, 7, 39),rgb(8, 8, 94));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
+input{
+    border: none;
+    outline: none;
+}
+button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.calculadora{
+    background: #262627;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .75rem;
+    width: 325px;
+    border: 1px solid rgb(245, 241, 241);
+    padding: .75rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.screen{
+    grid-column: 1/5;
+    border-radius: .75rem;
+    font-size: 2rem;
+    height: 6rem;
+    color: white;
+    background: #333d49;
+    text-align: end;
+    padding: .5rem;
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+.simbolo,.numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 1;
+    font-size: 1.28rem;
+    color: #fff;
+    border-radius: 50%;
+    transition: .15s ease;
+}
+.simbolo{
+    background: #5f4db1;
+}
+.numero{
+    background: #333849;
+}
+.number:hover{
+    background: #110b30;
+}
+
+h1{
+    color: rgb(218, 220, 240);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-shadow: 0 0 10px rgb(212, 24, 24);
+}
